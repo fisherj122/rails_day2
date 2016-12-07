@@ -1,0 +1,8 @@
+<h1>Username and Password Checker</h1>
+<form action="/check_password" method="get">
+  <input type="text" name="user" placeholder="Enter Username"/>
+  <input type="text" name="pass" placeholder="Enter Password">
+  <input type="submit" value="Check">
+</form>
+<h2><%= @user_error %></h2>
+<h2><%= @pass_error %></h2>

@@ -1,0 +1,10 @@
+<h1>Hi-Lo Game</h1>
+<form action = "/hilow" method = "get">
+  <input type = "number" name = "guess"/>
+  <input type = "submit" value = "Submit"/>
+
+</form>
+
+<% if !@guess.nil? && @guess != "" %>
+<p>The number <strong><%= @guess %></strong> <%= @result %></p>
+<% end %>
